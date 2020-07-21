@@ -1,7 +1,7 @@
 package main
 
-func main()  {
-	//testTwoSum()
-	//testReverse()
-	testIsPalindrome()
+import "github.com/qymeng/leet-code/offer"
+
+func main() {
+	offer.Test()
 }

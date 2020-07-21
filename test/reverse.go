@@ -1,4 +1,4 @@
-package main
+package test
 
 import "fmt"
 
@@ -28,7 +28,7 @@ import "fmt"
 // Related Topics 数学
 
 //leetcode submit region begin(Prohibit modification and deletion)
-func reverse(x int) int {
+func Reverse(x int) int {
 	var res int
 	var mod int
 	for x != 0 {
@@ -40,12 +40,12 @@ func reverse(x int) int {
 	return res
 }
 
-func testReverse()  {
+func TestReverse() {
 	var res int
 	//res = reverse(123)
 	//fmt.Print(res)
 
-	res = reverse(-123)
+	res = Reverse(-123)
 	fmt.Print(res)
 }
 

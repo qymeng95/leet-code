@@ -1,4 +1,4 @@
-package main
+package test
 
 import "fmt"
 
@@ -19,7 +19,7 @@ import "fmt"
 // Related Topics 数组 哈希表
 
 //leetcode submit region begin(Prohibit modification and deletion)
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	var result []int
 
 	length := len(nums)
@@ -40,8 +40,8 @@ func twoSum(nums []int, target int) []int {
 
 //leetcode submit region end(Prohibit modification and deletion)
 
-func testTwoSum() {
+func TestTwoSum() {
 	nums := []int{2, 7, 11, 15}
-	result := twoSum(nums, 9)
+	result := TwoSum(nums, 9)
 	fmt.Print(result)
 }

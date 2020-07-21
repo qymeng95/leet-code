@@ -1,6 +1,8 @@
-package main
+package test
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
 //
@@ -31,12 +33,12 @@ import "fmt"
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func isPalindrome(x int) bool {
-	y := reverse(x)
+	y := Reverse(x)
 
 	return x == y
 }
 
-func testIsPalindrome()  {
+func testIsPalindrome() {
 	res := isPalindrome(121)
 	fmt.Print(res)
 
