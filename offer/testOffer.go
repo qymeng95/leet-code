@@ -1,5 +1,8 @@
 package offer
 
 func Test() {
-	TestFindRepeatNumber()
+	//TestFindRepeatNumber()
+	//TestFindNumberIn2DArray()
+	//TestReplaceSpace()
+	TestReversePrint()
 }
