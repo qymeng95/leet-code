@@ -14,24 +14,6 @@ type BinTree struct {
 
 var i = -1
 
-func (node *BinTree) Create(data []int) *BinTree {
-	if node == nil {
-		return nil
-	}
-	i = i + 1
-	// 创建二叉树结点
-	var bin *BinTree
-	if i >= len(data) {
-		return nil
-	} else {
-		bin = new(BinTree)
-		bin.Val = data[i]
-		bin.Left = bin.Create(data)
-		bin.Right = bin.Create(data)
-	}
-	return bin
-}
-
 func (node *BinTree) New(index int, data []int) *BinTree {
 	if node == nil {
 		return nil
@@ -39,7 +21,6 @@ func (node *BinTree) New(index int, data []int) *BinTree {
 	bin := &BinTree{data[index], nil, nil}
 	// 设置完全二叉树左节点  其特征是深度 *2+1为左节点  +2为右节点
 	if index < len(data) && 2*index+1 < len(data) {
-		fmt.Println()
 		bin.Left = bin.New(index*2+1, data)
 	}
 	if i < len(data) && 2*index+2 < len(data) {

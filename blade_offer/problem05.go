@@ -1,4 +1,4 @@
-package offer
+package blade_offer
 
 import "strings"
 

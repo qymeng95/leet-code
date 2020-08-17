@@ -1,4 +1,4 @@
-package offer
+package blade_offer
 
 func FindRepeatNumber(nums []int) int {
 	var t int

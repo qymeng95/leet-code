@@ -1,4 +1,4 @@
-package offer
+package blade_offer
 
 func FindNumberIn2DArray(matrix [][]int, target int) bool {
 	for i := 0; i < len(matrix); i++ {

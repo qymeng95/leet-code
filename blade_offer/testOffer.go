@@ -1,8 +1,9 @@
-package offer
+package blade_offer
 
 func Test() {
 	//TestFindRepeatNumber()
 	//TestFindNumberIn2DArray()
 	//TestReplaceSpace()
-	TestReversePrint()
+	//TestReversePrint()
+	TestBuildTree()
 }
