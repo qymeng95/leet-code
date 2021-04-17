@@ -1,8 +1,9 @@
 package main
 
-import "leet-code/blade_offer"
+import codecn "leet-code/leetcode/code/cn"
 
 func main() {
-	blade_offer.Test()
+	//blade_offer.Test()
 	//data_struct.NewBinary()
+	codecn.Test()
 }
