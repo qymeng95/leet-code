@@ -36,13 +36,19 @@ import "fmt"
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func longestCommonPrefix(strs []string) string {
+	if strs == nil || len(strs) == 0 {
+		return ""
+	}
 	resStr := ""
 	index := 0
 	tmp := ""
 	for true {
+		if len(strs[0]) < index+1 {
+			goto endfor
+		}
 		tmp = strs[0][index : index+1]
 		for _, value := range strs {
-			if tmp != value[index:index+1] {
+			if len(value) < index+1 || tmp != value[index:index+1] {
 				goto endfor
 			}
 		}
@@ -55,7 +61,8 @@ endfor:
 }
 
 func TestP14() {
-	strs := []string{"flower", "flow", "flight"}
+	//strs := []string{"flower", "flow", "flight"}
+	strs := []string{""}
 	resStr := longestCommonPrefix(strs)
 
 	fmt.Println(resStr)
